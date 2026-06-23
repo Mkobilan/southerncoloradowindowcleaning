@@ -22,12 +22,12 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-bg">
-          <Image src="/hero.png" alt="Sparkling clean commercial storefront window reflecting a bright blue sky" fill priority style={{objectFit:"cover"}} />
+          <Image src="/hero.png" alt="Sparkling clean commercial storefront window reflecting a bright blue sky in Pueblo Colorado" fill priority style={{objectFit:"cover"}} />
         </div>
         <div className="hero-overlay"></div>
         <div className="container relative">
           <div className="hero-content animate-fade-in-up">
-            <span className="hero-tagline">Serving Pueblo, Colorado & Surrounding Areas</span>
+            <span className="hero-tagline">Serving Pueblo, Colorado &amp; Surrounding Areas</span>
             <h1>Let Your Windows <span>Shine Bright</span></h1>
             <p>Premium, professional window washing services for commercial buildings and storefronts. Discover why we are the top-rated cleaning company in your area.</p>
             <div className="hero-actions">
@@ -36,6 +36,33 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Prominent Brand / Logo Section */}
+      <section className="brand-section">
+        <div className="brand-line"></div>
+        <div className="brand-content">
+          <div className="brand-logo-wrap">
+            <Image
+              src="/logo.png"
+              alt="Southern Colorado Window Cleaning - Pueblo Colorado"
+              width={180}
+              height={180}
+              className="brand-logo"
+            />
+          </div>
+          <div className="brand-text">
+            <h2 className="brand-name">Southern Colorado Window Cleaning</h2>
+            <p className="brand-tagline-text">Pueblo&rsquo;s Premier Professional Window Cleaning Service</p>
+            <div className="brand-badges">
+              <span className="badge">📍 Pueblo, CO</span>
+              <span className="badge">✅ Free Quotes</span>
+              <span className="badge">🌿 Eco-Friendly</span>
+              <span className="badge">⭐ Streak-Free Guarantee</span>
+            </div>
+          </div>
+        </div>
+        <div className="brand-line"></div>
       </section>
 
       {/* Services Section */}
@@ -49,8 +76,8 @@ export default function Home() {
               <div className="service-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
               </div>
-              <h3>Commercial & Storefronts</h3>
-              <p>Keep your business looking inviting with our professional commercial window cleaning services. First impressions matter.</p>
+              <h3>Commercial &amp; Storefronts</h3>
+              <p>Keep your business looking inviting with our professional commercial window cleaning services. First impressions matter — let your storefront shine in Pueblo.</p>
             </div>
             
             <div className="service-card">
@@ -58,14 +85,14 @@ export default function Home() {
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
               </div>
               <h3>Recurring Maintenance</h3>
-              <p>Choose weekly or monthly schedule cleaning packages to ensure your windows remain spotless year-round.</p>
+              <p>Choose weekly or monthly schedule cleaning packages to ensure your windows remain spotless year-round without lifting a finger.</p>
             </div>
             
             <div className="service-card">
               <div className="service-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
               </div>
-              <h3>Hard Water & Heavy Duty</h3>
+              <h3>Hard Water &amp; Heavy Duty</h3>
               <p>We tackle the toughest grime and hard water stains. Specialized eco-friendly cleaning solutions for restorative shines.</p>
             </div>
           </div>
@@ -85,8 +112,8 @@ export default function Home() {
                 <div className="price">$7-9<span>/pane</span></div>
               </div>
               <ul className="pricing-features">
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Exterior & Interior options</li>
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Edge & Sill wipedown</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Exterior &amp; Interior options</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Edge &amp; Sill wipedown</li>
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Eco-friendly cleaning</li>
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Streak-free guarantee</li>
               </ul>
@@ -118,7 +145,7 @@ export default function Home() {
         <div className="container">
           <h2>Ready for a Brighter View?</h2>
           <p style={{fontSize: "1.2rem", opacity: 0.9, maxWidth: "600px", margin: "0 auto"}}>
-            Join other local Pueblo businesses who trust us as their dedicated cleaning contractor. Contact our cleaning team today!
+            Join other local Pueblo, Colorado businesses who trust us as their dedicated cleaning contractor. Contact our team today for a free quote!
           </p>
           
           <div className="contact-methods">
@@ -146,8 +173,11 @@ export default function Home() {
         <div className="container">
           <div className="footer-content">
             <div style={{display: "flex", alignItems: "center", gap: "10px"}}>
-              <Image src="/logo.png" alt="Southern Colorado Window Cleaning Logo" width={32} height={32} />
+              <Image src="/logo.png" alt="Southern Colorado Window Cleaning Logo" width={40} height={40} />
               <strong style={{color: "white"}}>Southern Colorado Window Cleaning</strong>
+            </div>
+            <div>
+              Pueblo, Colorado &mdash; Call/Text: <a href="tel:7192971125" style={{color: "rgba(255,255,255,0.8)"}}>719.297.1125</a>
             </div>
             <div>
               &copy; {new Date().getFullYear()} Southern Colorado Window Cleaning. All rights reserved.

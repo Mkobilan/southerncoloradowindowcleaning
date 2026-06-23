@@ -511,6 +511,101 @@ a {
   gap: 20px;
 }
 
+/* Brand / Logo Showcase Section */
+.brand-section {
+  background-color: var(--color-white);
+  padding: 60px 24px;
+  text-align: center;
+}
+
+.brand-line {
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--color-primary), var(--color-gold), var(--color-accent), transparent);
+  border-radius: 3px;
+  margin: 0 auto 48px;
+  max-width: 800px;
+}
+
+.brand-line:last-child {
+  margin-top: 48px;
+  margin-bottom: 0;
+}
+
+.brand-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.brand-logo-wrap {
+  flex-shrink: 0;
+  background: var(--color-bg-light);
+  border-radius: 32px;
+  padding: 24px;
+  box-shadow: 0 8px 32px rgba(0, 40, 104, 0.1);
+  border: 2px solid rgba(0, 40, 104, 0.06);
+  transition: var(--transition-smooth);
+  animation: float 4s ease-in-out infinite;
+}
+
+.brand-logo-wrap:hover {
+  box-shadow: 0 16px 48px rgba(0, 40, 104, 0.18);
+  transform: scale(1.03);
+  animation-play-state: paused;
+}
+
+.brand-logo {
+  display: block;
+}
+
+.brand-text {
+  text-align: left;
+}
+
+.brand-name {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  line-height: 1.15;
+  margin-bottom: 8px;
+}
+
+.brand-tagline-text {
+  font-size: 1.15rem;
+  color: var(--color-text-light);
+  margin-bottom: 24px;
+}
+
+.brand-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--color-bg-light);
+  border: 1px solid rgba(0, 40, 104, 0.1);
+  color: var(--color-text-dark);
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: var(--transition-smooth);
+}
+
+.badge:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .hero h1 { font-size: 3rem; }
@@ -519,4 +614,8 @@ a {
   .pricing-card.featured { transform: scale(1); }
   .pricing-wrapper { gap: 24px; }
   .footer-content { flex-direction: column; text-align: center; }
+  .brand-content { flex-direction: column; text-align: center; }
+  .brand-text { text-align: center; }
+  .brand-name { font-size: 1.8rem; }
+  .brand-badges { justify-content: center; }
 }
