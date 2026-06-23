@@ -361,6 +361,12 @@ a {
   position: relative;
   border: 1px solid rgba(0,0,0,0.05);
   flex: 1 1 280px;
+  transition: var(--transition-smooth);
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 40, 104, 0.08);
 }
 
 .pricing-card.featured {

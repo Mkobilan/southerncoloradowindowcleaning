@@ -158,7 +158,7 @@ export default function Home() {
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Eco-friendly solutions</li>
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Streak-free guarantee</li>
               </ul>
-              <a href="tel:7192971125" className="btn-primary" style={{width:"100%", textAlign:"center", display:"block", marginTop:"16px"}}>Get a Quote</a>
+              <div className="btn-primary" style={{width:"100%", textAlign:"center", display:"block", marginTop:"16px", cursor:"default"}}>Text or Email for Free quote</div>
             </div>
             <div className="pricing-card featured">
               <div className="pricing-badge">Most Popular</div>
@@ -172,7 +172,7 @@ export default function Home() {
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Eco-friendly solutions</li>
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Streak-free guarantee</li>
               </ul>
-              <a href="tel:7192971125" className="btn-primary" style={{width:"100%", textAlign:"center", display:"block", marginTop:"16px"}}>Get a Quote</a>
+              <div className="btn-primary" style={{width:"100%", textAlign:"center", display:"block", marginTop:"16px", cursor:"default"}}>Text or Email for Free quote</div>
             </div>
             <div className="pricing-card">
               <div className="pricing-header">
@@ -185,7 +185,7 @@ export default function Home() {
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Long-term neglect restoration</li>
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Preps for recurring plan</li>
               </ul>
-              <a href="tel:7192971125" className="btn-primary" style={{width:"100%", textAlign:"center", display:"block", marginTop:"16px"}}>Get a Quote</a>
+              <div className="btn-primary" style={{width:"100%", textAlign:"center", display:"block", marginTop:"16px", cursor:"default"}}>Text or Email for Free quote</div>
             </div>
           </div>
           <div className="pricing-note">
