@@ -214,7 +214,7 @@ export default function Home() {
           </div>
           <div className="areas-cta">
             <p>Serving all of <strong>Pueblo County, CO</strong> — professional window cleaning services near you.</p>
-            <a href="tel:7192971125" className="btn-primary">Check Your Area — Free Quote</a>
+            <p style={{fontSize: "1.1rem", fontWeight: "bold", color: "var(--color-primary)", margin: 0}}>Text us at 719.297.1125 to see if we service your area!</p>
           </div>
         </div>
       </section>
