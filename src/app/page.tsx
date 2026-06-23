@@ -13,7 +13,9 @@ export default function Home() {
           <div className="nav-links">
             <a href="#services" className="nav-link">Services</a>
             <a href="#pricing" className="nav-link">Pricing</a>
-            <a href="#about" className="nav-link">About Us</a>
+            <a href="#areas" className="nav-link">Service Areas</a>
+            <a href="#faq" className="nav-link">FAQ</a>
+            <a href="#about" className="nav-link">Contact</a>
           </div>
           <a href="tel:7192971125" className="btn-primary">Call or Text Now</a>
         </div>
@@ -65,12 +67,54 @@ export default function Home() {
         <div className="brand-line"></div>
       </section>
 
+      {/* Why Choose Us Trust Bar */}
+      <section className="trust-bar">
+        <div className="container">
+          <div className="trust-grid">
+            <div className="trust-item">
+              <div className="trust-icon">📍</div>
+              <div className="trust-text">
+                <strong>Locally Owned</strong>
+                <span>Proud Pueblo, CO business</span>
+              </div>
+            </div>
+            <div className="trust-item">
+              <div className="trust-icon">💬</div>
+              <div className="trust-text">
+                <strong>Free Quotes</strong>
+                <span>Text or call anytime</span>
+              </div>
+            </div>
+            <div className="trust-item">
+              <div className="trust-icon">🌿</div>
+              <div className="trust-text">
+                <strong>Eco-Friendly</strong>
+                <span>Safe for people &amp; planet</span>
+              </div>
+            </div>
+            <div className="trust-item">
+              <div className="trust-icon">🔄</div>
+              <div className="trust-text">
+                <strong>Recurring Plans</strong>
+                <span>Weekly or monthly schedules</span>
+              </div>
+            </div>
+            <div className="trust-item">
+              <div className="trust-icon">✨</div>
+              <div className="trust-text">
+                <strong>Streak-Free</strong>
+                <span>Professional-grade results</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="services" className="services">
         <div className="container">
           <h2 className="section-title">Our Cleaning Services</h2>
           <p className="section-subtitle">We offer top-tier window cleaning solutions tailored to your business needs. From routine maintenance to heavy-duty initial cleanings, we make sure your business shines.</p>
-          
           <div className="service-grid">
             <div className="service-card">
               <div className="service-icon">
@@ -79,7 +123,6 @@ export default function Home() {
               <h3>Commercial &amp; Storefronts</h3>
               <p>Keep your business looking inviting with our professional commercial window cleaning services. First impressions matter — let your storefront shine in Pueblo.</p>
             </div>
-            
             <div className="service-card">
               <div className="service-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
@@ -87,7 +130,6 @@ export default function Home() {
               <h3>Recurring Maintenance</h3>
               <p>Choose weekly or monthly schedule cleaning packages to ensure your windows remain spotless year-round without lifting a finger.</p>
             </div>
-            
             <div className="service-card">
               <div className="service-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
@@ -104,9 +146,7 @@ export default function Home() {
         <div className="container">
           <h2 className="section-title" style={{textAlign: "center"}}>Transparent Pricing</h2>
           <p className="section-subtitle">No hidden fees. We provide straightforward, affordable window cleaning charges for the Pueblo area.</p>
-          
           <div className="pricing-wrapper">
-            {/* Exterior Only */}
             <div className="pricing-card">
               <div className="pricing-header">
                 <h3>Exterior Only</h3>
@@ -118,9 +158,8 @@ export default function Home() {
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Eco-friendly solutions</li>
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Streak-free guarantee</li>
               </ul>
+              <a href="tel:7192971125" className="btn-primary" style={{width:"100%", textAlign:"center", display:"block", marginTop:"16px"}}>Get a Quote</a>
             </div>
-
-            {/* Interior + Exterior */}
             <div className="pricing-card featured">
               <div className="pricing-badge">Most Popular</div>
               <div className="pricing-header">
@@ -133,9 +172,8 @@ export default function Home() {
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Eco-friendly solutions</li>
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Streak-free guarantee</li>
               </ul>
+              <a href="tel:7192971125" className="btn-primary" style={{width:"100%", textAlign:"center", display:"block", marginTop:"16px"}}>Get a Quote</a>
             </div>
-
-            {/* Deep Cleaning */}
             <div className="pricing-card">
               <div className="pricing-header">
                 <h3>Initial Deep Clean</h3>
@@ -147,11 +185,84 @@ export default function Home() {
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Long-term neglect restoration</li>
                 <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Preps for recurring plan</li>
               </ul>
+              <a href="tel:7192971125" className="btn-primary" style={{width:"100%", textAlign:"center", display:"block", marginTop:"16px"}}>Get a Quote</a>
             </div>
           </div>
-          
           <div className="pricing-note">
             <strong>Need a custom plan?</strong> We offer specialized cleaning packages for large commercial properties and recurring services. Reach out for a free custom quote!
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas Section */}
+      <section id="areas" className="areas">
+        <div className="container">
+          <h2 className="section-title">Window Cleaning Near You — Pueblo &amp; Surrounding Areas</h2>
+          <p className="section-subtitle">We provide professional window cleaning services throughout Pueblo and the surrounding communities. If you don&apos;t see your area listed, just ask — we&apos;re always expanding!</p>
+          <div className="areas-grid">
+            {[
+              "Downtown Pueblo", "Bessemer", "Belmont", "South Side",
+              "Mineral Palace", "Northside", "Eastside", "West Side",
+              "Pueblo West", "Vineland", "Salt Creek", "Avondale",
+              "Boone", "Rye", "Colorado City", "Beulah"
+            ].map((area) => (
+              <div key={area} className="area-chip">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                {area}
+              </div>
+            ))}
+          </div>
+          <div className="areas-cta">
+            <p>Serving all of <strong>Pueblo County, CO</strong> — professional window cleaning services near you.</p>
+            <a href="tel:7192971125" className="btn-primary">Check Your Area — Free Quote</a>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section id="faq" className="faq">
+        <div className="container">
+          <h2 className="section-title">Frequently Asked Questions</h2>
+          <p className="section-subtitle">Everything you need to know about our window cleaning services in Pueblo, Colorado.</p>
+          <div className="faq-list">
+            {[
+              {
+                q: "How much does window cleaning cost in Pueblo, Colorado?",
+                a: "Our window cleaning pricing is transparent and per-pane. Exterior-only cleaning starts at $7–$9 per pane. Interior and exterior cleaning is $12–$17 per pane. If your windows are heavily soiled, have hard water stains, or have not been cleaned in a long time, an initial deep-cleaning fee of $25–$50 may apply based on condition. All quotes are free — just call or text us at 719.297.1125!"
+              },
+              {
+                q: "Do you offer recurring window cleaning services?",
+                a: "Yes! We offer flexible recurring maintenance plans on a weekly or monthly schedule. Regular cleaning keeps your storefront or commercial building looking sharp and prevents hard water buildup, which saves you money in the long run."
+              },
+              {
+                q: "Can you remove hard water stains from windows?",
+                a: "Absolutely. Hard water stain removal is one of our specialties. For windows with significant mineral deposits or long-term buildup, we apply an initial deep-cleaning treatment before setting up any recurring maintenance plan."
+              },
+              {
+                q: "Do you clean both interior and exterior windows?",
+                a: "Yes! We offer exterior-only cleaning ($7–$9/pane) and full interior plus exterior cleaning ($12–$17/pane). Just let us know your preference when you reach out for a free quote."
+              },
+              {
+                q: "What areas do you serve near Pueblo, CO?",
+                a: "We serve all of Pueblo and surrounding communities including Pueblo West, Bessemer, Belmont, Downtown Pueblo, Northside, South Side, Vineland, Avondale, Colorado City, and more. Not sure if we cover your area? Give us a call or text — we are always happy to help."
+              },
+              {
+                q: "How do I get a free quote?",
+                a: "Easy! Text or call us at 719.297.1125 (texting is preferred) or email us at matthew.kobilan@gmail.com. We will get back to you quickly with a transparent, no-obligation quote tailored to your property."
+              },
+              {
+                q: "Are your cleaning solutions eco-friendly?",
+                a: "Yes. We use eco-friendly, biodegradable cleaning solutions that are safe for people, pets, and the environment — without compromising on that professional streak-free shine."
+              },
+            ].map((item, i) => (
+              <details key={i} className="faq-item">
+                <summary className="faq-question">
+                  {item.q}
+                  <svg className="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </summary>
+                <div className="faq-answer">{item.a}</div>
+              </details>
+            ))}
           </div>
         </div>
       </section>
@@ -163,7 +274,6 @@ export default function Home() {
           <p style={{fontSize: "1.2rem", opacity: 0.9, maxWidth: "600px", margin: "0 auto"}}>
             Join other local Pueblo, Colorado businesses who trust us as their dedicated cleaning contractor. Contact our team today for a free quote!
           </p>
-          
           <div className="contact-methods">
             <a href="tel:7192971125" className="contact-method">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
@@ -172,7 +282,6 @@ export default function Home() {
                 <strong>719.297.1125</strong>
               </div>
             </a>
-            
             <a href="mailto:matthew.kobilan@gmail.com" className="contact-method">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
               <div className="contact-info">

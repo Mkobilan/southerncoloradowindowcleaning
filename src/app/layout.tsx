@@ -104,6 +104,49 @@ export default function RootLayout({
             }),
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "How much does window cleaning cost in Pueblo, Colorado?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our window cleaning pricing is transparent and per-pane. Exterior-only cleaning starts at $7–$9 per pane. Interior and exterior cleaning is $12–$17 per pane. If your windows are heavily soiled, have hard water stains, or have not been cleaned in a long time, an initial deep-cleaning fee of $25–$50 may apply based on condition. All quotes are free — just call or text us at 719.297.1125!"
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Do you offer recurring window cleaning services?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! We offer flexible recurring maintenance plans on a weekly or monthly schedule. Regular cleaning keeps your storefront or commercial building looking sharp and prevents hard water buildup, which saves you money in the long run."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can you remove hard water stains from windows?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolutely. Hard water stain removal is one of our specialties. For windows with significant mineral deposits or long-term buildup, we apply an initial deep-cleaning treatment before setting up any recurring maintenance plan."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What areas do you serve near Pueblo, CO?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We serve all of Pueblo and surrounding communities including Pueblo West, Bessemer, Belmont, Downtown Pueblo, Northside, South Side, Vineland, Avondale, Colorado City, and more. Not sure if we cover your area? Give us a call or text — we are always happy to help."
+                  }
+                }
+              ]
+            }),
+          }}
+        />
       </head>
       <body>
         {children}
