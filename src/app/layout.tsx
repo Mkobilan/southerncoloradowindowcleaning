@@ -22,15 +22,11 @@ export const metadata: Metadata = {
     type: "website",
   },
   icons: {
-    icon: "/logo.png",
-    apple: "/logo.png",
-  },
-  other: {
-    "geo.region": "US-CO",
-    "geo.placename": "Pueblo, Colorado",
-    "geo.position": "38.2544;-104.6091",
-    "ICBM": "38.2544, -104.6091",
-    "google-site-verification": "wnwX0v0OGT7E25CuYA6r3_NjExggVU9PFITJXnpMp8U",
+    icon: [
+      { url: "/icon.png", type: "image/png" },
+    ],
+    apple: "/icon.png",
+    shortcut: "/icon.png",
   },
 };
 
